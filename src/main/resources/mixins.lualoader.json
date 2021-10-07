@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "mephedronesolutions.lualoader.mixins",
+  "refmap": "mixins.bootloader.refmap.json",
+  "mixins": [
+    "MixinMinecraft"
+  ]
+}
