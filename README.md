@@ -3,7 +3,7 @@
 # lualoader
 lualoader is a loader for your pastes
 
-yes it is better than falcon
+~~yes it is better than falcon~~ (for a little time it isn't)
 
 if you found a dumper ~~go fuck yourself~~ create an issue
 
