@@ -91,37 +91,28 @@ shadowJar {
 
 task clientJar(type: Jar, dependsOn: jar) {
 	from(zipTree(shadowJar.archivePath)) {
-		include "org/pulseclient/api/**"
-		include "org/pulseclient/client/**"
-		include "org/pulseclient/mixin/**"
-		include "org/pulseclient/Pulse"
+		include "fuck/you/stupid/paster/**"
 
-		exclude "native/**"
-		include "mixins.pulseclient.json"
-		include "mixins.pulseclient.refmap.json"
+		include "mixins.lualoader.json"
+		include "mixins.lualoader.refmap.json"
 	}
 
 	baseName = ""
 	version = ""
-	classifier = "client-unobf"
+	classifier = "luaclient"
 }
 
 task loaderJar(type: Jar, dependsOn: jar) {
 	from(zipTree(shadowJar.archivePath)) {
-		exclude "org/pulseclient/api/**"
-		exclude "org/pulseclient/client/**"
-		exclude "org/pulseclient/mixin/**"
-		exclude "org/pulseclient/loader/**"
-		exclude "org/pulseclient/Pulse"
+		exclude "fuck/you/stupid/paster/**"
 
-		exclude "native/**"
-		exclude "mixins.pulseclient.json"
-		exclude "mixins.pulseclient.refmap.json"
+		exclude "mixins.lualoader.json"
+		exclude "mixins.lualoader.refmap.json"
 	}
 
 	baseName = ""
 	version = ""
-	classifier = "pulseloader-unobf"
+	classifier = "lualoader"
 }
 
 build.dependsOn(clientJar, loaderJar)
