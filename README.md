@@ -1,12 +1,10 @@
 <div align="center">
 
 # lualoader
-lualoader is a loader for your pastes
-
-~~yes it is better than falcon~~ (for a little time it isn't)
-
-if you found a dumper ~~go fuck yourself~~ create an issue
-
+lualoader is a god damn loader for
+ your fucking pastes
+  
+  its already harder to dump than falcon but better paste a dumper from falcon lol
 ### if you wanna use it feel free, but credit plutosolutions
 
 </div>
